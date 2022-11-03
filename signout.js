@@ -27,7 +27,7 @@ firebase.auth().onAuthStateChanged(function (user) {
                     // Sign-out successful.
                     fsignout = 1;
                     window.alert("You have Logged Out Succesfully.");
-                    window.location = "index.html";
+                    window.location = "main.html";
                 }).catch((error) => {
                     // An error happened.
                     alert(error.message);
@@ -36,6 +36,6 @@ firebase.auth().onAuthStateChanged(function (user) {
     }
     else if (fsignout == 0) {
         window.alert("You need to LogIn First.Redirecting to Home Page.");
-        window.location = "index.html";
+        window.location = "main.html";
     }
 });

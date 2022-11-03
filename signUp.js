@@ -26,7 +26,7 @@ form.addEventListener('submit', function (e) {
             form.reset();
             localStorage.setItem("user", JSON.stringify(cred));
             window.alert("Successfully Registered");
-            window.location.href = "index.html";
+            window.location.href = "main.html";
         })
         .catch(err => {
             alert(err.message);
